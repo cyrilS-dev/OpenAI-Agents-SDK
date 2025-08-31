@@ -17,7 +17,7 @@ const orderAgent = new RealtimeAgent({
 
 const productAgent = new RealtimeAgent({
   name: 'assistantProduit', 
-  voice: 'cedar',
+  voice: 'marin',
   instructions: `TU ES SPÉCIALISTE DES PRODUITS.
 **TON RÔLE EXCLUSIF** : Répondre aux questions sur les produits et demander les références.
 **TU DOIS** :
@@ -35,7 +35,7 @@ productAgent.handoffs = [orderAgent];
 
 const greeterAgent = new RealtimeAgent({
   name: 'assistantAccueil',
-  voice: 'alloy',
+  voice: 'marin',
   instructions: `TU ES L'ASSISTANT D'ACCUEIL.
 **TON RÔLE** : Accueillir l'utilisateur et identifier son besoin.
 **TU DOIS** :
