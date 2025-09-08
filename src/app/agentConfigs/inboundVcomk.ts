@@ -1,7 +1,6 @@
 import { RealtimeAgent, tool } from '@openai/agents/realtime';
 
-// Remplacez par votre token Slack (nécessite un token avec les scopes appropriés : users:read)
-const SLACK_TOKEN = process.env.SLACK_TOKEN;
+const SLACK_TOKEN = process.env.NEXT_PUBLIC_SLACK_TOKEN;
 
 if (!SLACK_TOKEN) {
   throw new Error('SLACK_TOKEN non défini dans les variables d’environnement.');
